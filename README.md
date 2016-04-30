@@ -12,7 +12,7 @@ from dxe_airtable.airtable import get_all_records
 
 You can also run the scripts directly, like so:
 
-    python -m dxe_airtable.backup_airtable /opt/dxe/airtable/backups
+    python2 -m dxe_airtable.backup_airtable /opt/dxe/airtable/backups
 
 Note that you will need to define the following environment variables to use this:
 
@@ -96,3 +96,6 @@ You also need AIRTABLE_API_KEY set in your env.
 ```shell
 python2 dxe_airtable.test_airtable_to_mailing_list
 ```
+
+# License
+Copyright © 2016 DxE Tech Working Group and licensed under the GNU General Public License v3.0. See the LICENSE file for the complete license.
