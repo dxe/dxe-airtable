@@ -1,4 +1,4 @@
-# Airtable Backup
+# Airtable Python Library
 
 Airtable library files used by DxE tech. This is a pip installable package you can use like:
 
@@ -9,6 +9,10 @@ then:
 ```python
 from dxe_airtable.airtable import get_all_records
 ```
+
+You can also run the scripts directly, like so:
+
+    python -m dxe_airtable.backup_airtable /opt/dxe/airtable/backups
 
 Note that you will need to define the following environment variables to use this:
 
@@ -77,8 +81,8 @@ Syncs the Google Groups mailing lists members one-way from Airtable. As each mem
 
 To sync the Google Groups Mailing Lists from the data in Airtable, run:
 
-```bash
-$ make sync
+```shell
+python2 -m dxe_airtable.airtable_to_mailing_list
 ```
 
 ## Setup
@@ -89,6 +93,6 @@ You also need AIRTABLE_API_KEY set in your env.
 
 ## Test
 
-```bash
-$ make test-sync
+```shell
+python2 dxe_airtable.test_airtable_to_mailing_list
 ```
