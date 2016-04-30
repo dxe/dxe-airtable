@@ -1,6 +1,19 @@
 # Airtable Backup
 
-Backs up the Airtable data to S3.
+Airtable library files used by DxE tech. This is a pip installable package you can use like:
+
+    pip install dxe-airtable
+
+then:
+
+```python
+from dxe_airtable.airtable import get_all_records
+```
+
+Note that you will need to define the following environment variables to use this:
+
+* `AIRTABLE_API_KEY`
+* `AIRTABLE_BASE_ID`
 
 ##How To Inspect The Airtable Backups
 
